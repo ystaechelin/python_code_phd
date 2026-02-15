@@ -442,7 +442,7 @@ class TAData:
             
         if save == True:
             fig.savefig(f"{today}_{self.sample}_dynamics.svg", bbox_inches = "tight")
-        fig.show()
+        # fig.show()
     
         return fig, ax
     
@@ -2320,6 +2320,7 @@ class TAMeasurementRow:
         plt.show()
 
         return fig, ax
+
 
 
 
