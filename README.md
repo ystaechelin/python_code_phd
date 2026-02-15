@@ -2,7 +2,7 @@
 
 Dieses Repository enthält beispielhaften Python-Code, den ich während meiner Promotion geschrieben habe (erstmals erstellt in 2022 und über die Jahre verfeinert, Funktionen hinzugefügt etc.). Der Code dient der Auswertung und schnellen Visualisierung von Messdaten aus der **Transienten Absorptionsspektroskopie (TA)**, also optical-pump-optical-probe. Der Datensatz einer TA-Messung beschreibt die Änderung der Absorption der Probe ΔA abhängig von der Abfragewellenlänge λ und der Verzögerungszeit t zwischen Anregungs- und Abfragepuls, also ΔA(λ,t). 
 
-**ta.py** basiert auf dem Prinzip der Objekt-orientierten Programmierung (OOP). Die Klasse *TAData* wird definiert. Eine Instanz dieser Klasse entspricht beinhaltet die Daten einer TA-Messung, bei der Erzeugung einer Instanz werden also Daten sowie Metadaten einer Messung eingelesen und als Attribute der Instanz gespeichert. 
+**ta.py** basiert auf dem Prinzip der Objekt-orientierten Programmierung (OOP). Die Klasse *TAData* wird definiert. Eine Instanz dieser Klasse beinhaltet eine TA-Messung, bei der Erzeugung einer Instanz werden also Daten sowie Metadaten einer Messung eingelesen und als Attribute der Instanz gespeichert. 
 
 Mittels der Methoden von *TAData* können nun Korrekturen an den Daten vorgenommen werden, schnelle Visualisierungen in einheitlichem Design erzeugt werden (z.B. *plot_spectra* zur Darstellung differentieller Spektren zu definierten Verzögerungszeiten ΔA(λ)) oder aufwendigere Analysen (z.B. *analyse_bleach_shift* zur Untersuchung eines zeitlichen Shifts eines Signals, hier des sogenannten Bleach-Signals) durchgeführt werden.
 
